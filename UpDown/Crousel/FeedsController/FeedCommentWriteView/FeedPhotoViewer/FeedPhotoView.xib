@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FeedPhotoView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPP-k4-dtH">
+                    <rect key="frame" x="0.0" y="124" width="320" height="320"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Lf-dw-DFV">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VAh-Hm-Ieg">
+                            <rect key="frame" x="282" y="8" width="30" height="30"/>
+                            <color key="backgroundColor" white="1" alpha="0.5" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="aUD-dZ-GVu"/>
+                                <constraint firstAttribute="height" constant="30" id="mV5-9f-lYR"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <state key="normal" image="closeRed.png"/>
+                            <connections>
+                                <action selector="closeView:" destination="iN0-l3-epB" eventType="touchUpInside" id="QPN-Gz-B3Y"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tc8-db-Cab">
+                            <rect key="frame" x="8" y="8" width="30" height="30"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="30" id="Eid-0C-dMl"/>
+                                <constraint firstAttribute="height" constant="30" id="Mb4-pq-XmB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <state key="normal" image="ic_delete2.png"/>
+                            <connections>
+                                <action selector="deleteFeed:" destination="iN0-l3-epB" eventType="touchUpInside" id="dsX-Q0-YhY"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.067995143581081094" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="1Lf-dw-DFV" secondAttribute="bottom" id="4x3-bl-8LZ"/>
+                        <constraint firstItem="VAh-Hm-Ieg" firstAttribute="top" secondItem="UPP-k4-dtH" secondAttribute="top" constant="8" id="7DI-d4-sLM"/>
+                        <constraint firstAttribute="height" constant="320" id="Mf7-Yw-Zzk"/>
+                        <constraint firstAttribute="width" constant="320" id="VbA-Rg-wnh"/>
+                        <constraint firstItem="Tc8-db-Cab" firstAttribute="top" secondItem="UPP-k4-dtH" secondAttribute="top" constant="8" id="W7Z-fm-MJ2"/>
+                        <constraint firstItem="1Lf-dw-DFV" firstAttribute="leading" secondItem="UPP-k4-dtH" secondAttribute="leading" id="fHU-Rk-uRk"/>
+                        <constraint firstItem="1Lf-dw-DFV" firstAttribute="top" secondItem="UPP-k4-dtH" secondAttribute="top" id="jDo-Xh-7Qi"/>
+                        <constraint firstAttribute="trailing" secondItem="1Lf-dw-DFV" secondAttribute="trailing" id="nWe-8R-W6g"/>
+                        <constraint firstAttribute="width" secondItem="UPP-k4-dtH" secondAttribute="height" multiplier="1:1" id="rKU-MS-GDb"/>
+                        <constraint firstAttribute="trailing" secondItem="VAh-Hm-Ieg" secondAttribute="trailing" constant="8" id="wpv-hF-xS9"/>
+                        <constraint firstItem="Tc8-db-Cab" firstAttribute="leading" secondItem="UPP-k4-dtH" secondAttribute="leading" constant="8" id="yQJ-bA-Hmg"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.29846389358108111" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="UPP-k4-dtH" secondAttribute="trailing" id="EyA-Tw-HIB"/>
+                <constraint firstItem="UPP-k4-dtH" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Hqa-EM-TZf"/>
+                <constraint firstItem="UPP-k4-dtH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fDK-Hg-5ty"/>
+                <constraint firstItem="UPP-k4-dtH" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="rFl-MC-VaK"/>
+            </constraints>
+            <connections>
+                <outlet property="closeButtton" destination="VAh-Hm-Ieg" id="I4K-gX-HYV"/>
+                <outlet property="deleteButtton" destination="Tc8-db-Cab" id="S6l-Ct-vqM"/>
+                <outlet property="photoImageView" destination="1Lf-dw-DFV" id="oKc-Qt-3Rq"/>
+                <outlet property="photoView" destination="UPP-k4-dtH" id="hxg-WP-B3P"/>
+            </connections>
+            <point key="canvasLocation" x="546" y="433"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="closeRed.png" width="15" height="15"/>
+        <image name="ic_delete2.png" width="512" height="512"/>
+    </resources>
+</document>
